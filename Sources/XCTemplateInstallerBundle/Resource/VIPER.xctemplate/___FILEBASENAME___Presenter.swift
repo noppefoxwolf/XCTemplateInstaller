@@ -7,8 +7,6 @@
 //
 //
 
-import UIKit
-
 protocol ___VARIABLE_productName:identifier___ViewOutput: AnyObject {
 }
 
@@ -20,10 +18,10 @@ class ___VARIABLE_productName:identifier___Presenter {
     var interactor: ___VARIABLE_productName:identifier___InteractorInput!
 }
 
-extension ___VARIABLE_productName:identifier___Presenter:  ___VARIABLE_productName:identifier___ViewOutput {
+extension ___VARIABLE_productName:identifier___Presenter: ___VARIABLE_productName:identifier___ViewOutput {
     
 }
 
-extension ___VARIABLE_productName:identifier___Presenter:  ___VARIABLE_productName:identifier___InteractorOutput {
+extension ___VARIABLE_productName:identifier___Presenter: ___VARIABLE_productName:identifier___InteractorOutput {
     
 }

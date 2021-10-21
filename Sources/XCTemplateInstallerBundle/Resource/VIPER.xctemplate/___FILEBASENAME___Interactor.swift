@@ -7,12 +7,9 @@
 //
 //
 
-import UIKit
-
 protocol ___VARIABLE_productName:identifier___InteractorInput: AnyObject {
 }
 
-//MARK: Interactor -
 protocol ___VARIABLE_productName:identifier___InteractorOutput: AnyObject {
 }
 

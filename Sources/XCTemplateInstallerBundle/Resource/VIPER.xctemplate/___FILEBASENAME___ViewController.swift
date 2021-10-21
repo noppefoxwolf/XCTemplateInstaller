@@ -10,9 +10,9 @@
 import UIKit
 
 class ___VARIABLE_productName:identifier___ViewController: UIViewController {
-
-	var output: ___VARIABLE_productName:identifier___ViewOutput!
-
+    
+    var output: ___VARIABLE_productName:identifier___ViewOutput!
+    
     init() {
         super.init(nibName: nil, bundle: nil)
         let presenter = ___VARIABLE_productName:identifier___Presenter()
@@ -24,11 +24,11 @@ class ___VARIABLE_productName:identifier___ViewController: UIViewController {
     }
     
     required init?(coder: NSCoder) { fatalError() }
-
-	override func viewDidLoad() {
+    
+    override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
 }
 
 extension ___VARIABLE_productName:identifier___ViewController: ___VARIABLE_productName:identifier___ViewInput {
