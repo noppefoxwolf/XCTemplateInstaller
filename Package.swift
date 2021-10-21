@@ -10,6 +10,12 @@ let package = Package(
     targets: [
         .executableTarget(
             name: "XCTemplateInstallerCLI",
+            dependencies: [
+                "XCTemplateInstallerBundle"
+            ]
+        ),
+        .target(
+            name: "XCTemplateInstallerBundle",
             resources: [
                 .copy("Resource/Module VIPER.xctemplate")
             ]

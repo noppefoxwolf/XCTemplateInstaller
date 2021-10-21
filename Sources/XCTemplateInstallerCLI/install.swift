@@ -1,4 +1,5 @@
 import Foundation
+import XCTemplateInstallerBundle
 
 let templateName = "Module VIPER.xctemplate"
 let destinationRelativePath = "/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Templates/Project Templates/iOS/Application"
@@ -12,7 +13,7 @@ func printInConsole(_ message:Any){
 func moveTemplate() {
     let fileManager = FileManager.default
     let destinationPath = bash(command: "xcode-select", arguments: ["--print-path"]).appending(destinationRelativePath)
-    let templatePath = Bundle.module.path(forResource: "Module VIPER", ofType: "xctemplate")!
+    let templatePath = Bundle.bundle.path(forResource: "Module VIPER", ofType: "xctemplate")!
     
     do {
         if !fileManager.fileExists(atPath:"\(destinationPath)/\(templateName)"){
