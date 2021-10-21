@@ -5,11 +5,11 @@ import PackageDescription
 let package = Package(
     name: "XCTemplateInstaller",
     products: [
-        .executable(name: "XCTemplateInstaller", targets: ["XCTemplateInstaller"])
+        .executable(name: "XCTemplateInstaller", targets: ["XCTemplateInstallerCLI"])
     ],
     targets: [
         .executableTarget(
-            name: "XCTemplateInstaller",
+            name: "XCTemplateInstallerCLI",
             resources: [
                 .copy("Resource/Module VIPER.xctemplate")
             ]
