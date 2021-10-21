@@ -7,17 +7,21 @@ let package = Package(
     products: [
         .executable(name: "XCTemplateInstaller", targets: ["XCTemplateInstallerCLI"])
     ],
+    dependencies: [
+        .package(url: "https://github.com/apple/swift-argument-parser", from: "1.0.1"),
+    ],
     targets: [
         .executableTarget(
             name: "XCTemplateInstallerCLI",
             dependencies: [
-                "XCTemplateInstallerBundle"
+                "XCTemplateInstallerBundle",
+                .product(name: "ArgumentParser", package: "swift-argument-parser"),
             ]
         ),
         .target(
             name: "XCTemplateInstallerBundle",
             resources: [
-                .copy("Resource/Module VIPER.xctemplate")
+                .copy("Resource/VIPER.xctemplate")
             ]
         )
     ]
