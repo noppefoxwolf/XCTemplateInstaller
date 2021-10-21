@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SupportsSwiftPackage</key>
+	<true/>
+	<key>AllowedTypes</key>
+	<array>
+		<string>public.swift-source</string>
+	</array>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+	</array>
+	<key>DefaultCompletionName</key>
+	<string>SwiftViperModule</string>
+	<key>Description</key>
+	<string>Basic Swift VIPER module template. Creates View, Interactor, Presenter, Router with protocols.</string>
+	<key>Kind</key>
+	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+	<key>MainTemplateFile</key>
+	<string>___FILEBASENAME___</string>
+	<key>SortOrder</key>
+	<integer>1</integer>
+	<key>Nodes</key>
+    <array>
+        <string>___FILEBASENAME___Interactor.swift</string>
+		<string>___FILEBASENAME___Presenter.swift</string>
+		<string>___FILEBASENAME___Protocols.swift</string>
+		<string>___FILEBASENAME___ViewController.swift</string>
+    </array>
+    <key>Definitions</key>
+    <dict>
+        <key>___FILEBASENAME___/___FILEBASENAME___Interactor.swift</key>
+        <dict>
+            <key>Group</key>
+            <array>
+                <string>___FILEBASENAME___</string>
+            </array>
+            <key>Path</key>
+            <key>___FILEBASENAME___Interactor.swift</key>
+        </dict>
+		<key>___FILEBASENAME___/___FILEBASENAME___Presenter.swift</key>
+        <dict>
+            <key>Group</key>
+            <array>
+                <string>___FILEBASENAME___</string>
+            </array>
+            <key>Path</key>
+            <key>___FILEBASENAME___Presenter.swift</key>
+        </dict>
+		<key>___FILEBASENAME___/___FILEBASENAME___Protocols.swift</key>
+        <dict>
+            <key>Group</key>
+            <array>
+                <string>___FILEBASENAME___</string>
+            </array>
+            <key>Path</key>
+            <key>___FILEBASENAME___Protocols.swift</key>
+        </dict>
+		<key>___FILEBASENAME___/___FILEBASENAME___ViewController.swift</key>
+        <dict>
+            <key>Group</key>
+            <array>
+                <string>___FILEBASENAME___</string>
+            </array>
+            <key>Path</key>
+            <key>___FILEBASENAME___ViewController.swift</key>
+        </dict>
+    </dict>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Description</key>
+			<string>Name of module that you need create</string>
+			<key>Default</key>
+			<string></string>
+			<key>Identifier</key>
+			<string>viperModuleName</string>
+			<key>Name</key>
+			<string>Module name</string>
+			<key>Required</key>
+			<string>YES</string>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_viperModuleName___</string>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+	</array>
+	<key>Template Author</key>
+	<string>noppefoxwolf</string>
+</dict>
+</plist>
