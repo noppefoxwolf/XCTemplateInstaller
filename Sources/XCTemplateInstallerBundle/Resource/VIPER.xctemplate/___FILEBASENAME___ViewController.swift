@@ -20,7 +20,6 @@ class ___VARIABLE_productName:identifier___ViewController: UIViewController {
         presenter.view = self
         presenter.interactor = interactor
         self.output = presenter
-        interactor.output = presenter
     }
     
     required init?(coder: NSCoder) { fatalError() }
@@ -31,6 +30,7 @@ class ___VARIABLE_productName:identifier___ViewController: UIViewController {
     
 }
 
+@MainActor
 extension ___VARIABLE_productName:identifier___ViewController: ___VARIABLE_productName:identifier___ViewInput {
     
 }

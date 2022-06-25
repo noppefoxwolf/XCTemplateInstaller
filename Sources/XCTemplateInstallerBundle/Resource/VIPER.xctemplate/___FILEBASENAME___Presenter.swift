@@ -7,9 +7,11 @@
 //
 //
 
+@MainActor
 protocol ___VARIABLE_productName:identifier___ViewOutput: AnyObject {
 }
 
+@MainActor
 protocol ___VARIABLE_productName:identifier___ViewInput: AnyObject {
 }
 
@@ -18,10 +20,7 @@ class ___VARIABLE_productName:identifier___Presenter {
     var interactor: ___VARIABLE_productName:identifier___InteractorInput!
 }
 
+@MainActor
 extension ___VARIABLE_productName:identifier___Presenter: ___VARIABLE_productName:identifier___ViewOutput {
-    
-}
-
-extension ___VARIABLE_productName:identifier___Presenter: ___VARIABLE_productName:identifier___InteractorOutput {
     
 }
